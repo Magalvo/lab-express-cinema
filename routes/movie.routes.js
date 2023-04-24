@@ -1,9 +1,6 @@
-const express = require('express');
-const router = express.Router();
-const Movie = require('../models/film-model');
+/* const router = require('express').Router();
 
-/* GET home page */
-router.get('/', (req, res, next) => res.render('index'));
+const Movie = require('../models/film-model');
 
 router.get('/movies', async (req, res) => {
   const moviesFromDB = await Movie.find();
@@ -14,5 +11,4 @@ router.get('/movies/:id', async (req, res) => {
   const movie = await Movie.findById(req.params.id);
   res.render('movies/movie-details', movie);
 });
-
-module.exports = router;
+ */

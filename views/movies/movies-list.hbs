@@ -1,0 +1,19 @@
+<div style='background-color: rgba(65, 65, 65, 0.7);'>
+  <h1 style='text-align: center;color:white;'>Our Library</h1>
+  <div style='display:flex; flex-direction:row; flex-wrap:wrap;'>
+    {{#each movies}}
+      <div style='margin:20px; padding: 30px;font-size:10px;'>
+        <img src='{{image}}' alt='' />
+
+        <h3 style='color:white'>{{title}}</h3>
+
+        <p><a
+            href='/movies/{{id}}'
+            style='text-decoration:none; color:00b7ff'
+          >See More</a></p>
+      </div>
+    {{/each}}
+
+  </div>
+
+</div>
